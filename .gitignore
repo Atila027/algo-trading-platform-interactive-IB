@@ -1,0 +1,17 @@
+*.pyc
+.idea
+__pycache__/*
+qtpylib/__pycache__/*
+dist
+/build
+/docs/build/doctrees/*
+/docs/build/html/*
+/docs/build/epub/*
+!/docs/build/epub/*.epub
+qtpylib.egg-info
+QTPyLib.egg-info
+Icon
+/sql-aggregate.txt
+/tests
+.vscode
+nosy.py

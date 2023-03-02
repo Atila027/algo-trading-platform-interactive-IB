@@ -1,0 +1,132 @@
+body {
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.005);
+}
+code, .pre, .code {
+    zoom: 1.1;
+    -webkit-font-smoothing: subpixel-antialiased;
+    -moz-osx-font-smoothing: subpixel-antialiased;
+}
+code, .pre {
+    line-height: 1;
+}
+
+h1, h2, .rst-content .toctree-wrapper p.caption, h3, h4, h5, h6, legend {
+    font-family: Lato, "Roboto Slab", "ff-tisa-web-pro", "Georgia", Arial, sans-serif;
+}
+h1 {
+    font-size: 200%;
+}
+.wy-breadcrumbs-aside a {
+    font-size: 14px;
+    line-height: 20px;
+}
+ul.wy-breadcrumbs {
+    background: url(icon.png) 0 4px no-repeat;
+    padding-left: 20px;
+    background-size: 14px;
+}
+.wy-side-nav-search, .wy-nav-top {
+    background: #111;
+}
+.wy-nav-top {
+    line-height: 1;
+}
+.wy-nav-top i {
+    margin-top: 4px;
+}
+.wy-side-nav-search a.icon-home, .wy-nav-top a {
+    background: #111 url(sidebar-logo.png) 0 50% no-repeat;
+    height: 40px;
+    background-size: 86px 40px;
+    text-indent: -5000px;
+    width: 86px;
+    opacity: .9;
+    display: inline-block;
+}
+.wy-side-nav-search a.icon-home:hover, .wy-nav-top a:hover {
+    opacity: 1;
+}
+.wy-side-nav-search input[type=text] {
+    border-color: #f5f5f5;
+}
+
+footer {
+    font-size: 13px;
+}
+.wy-nav-content {
+    max-width: 100% !important;
+}
+.rst-content {
+    max-width: 960px !important;
+    margin: auto;
+}
+
+.rst-content dl:not(.docutils) code {
+    font-weight: normal;
+}
+
+#qtpylib-pythonic-algorithmic-trading p:first-of-type {
+    display: block;
+    position: relative;
+    clear: both;
+    margin: 0 0 12px;
+}
+
+#qtpylib-pythonic-algorithmic-trading p a.reference.external {
+    display: none;
+}
+
+#qtpylib-pythonic-algorithmic-trading a.image-reference img {
+    max-height: 20px;
+    margin: 0 2px 0 0;
+}
+#qtpylib-pythonic-algorithmic-trading a {
+    float: left;
+    height: 25px;
+}
+
+#qtpylib-pythonic-algorithmic-trading h1 a,
+#qtpylib-pythonic-algorithmic-trading p a {
+    float: none;
+    height: auto;
+}
+
+@media only screen and (max-device-width: 768px) {
+    #qtpylib-pythonic-algorithmic-trading p:first-of-type {
+        margin: 0 0 12px;
+    }
+}
+.wy-side-nav-search .version {
+    display: none;
+}
+
+.wy-side-scroll {
+    padding-bottom: 60px;
+}
+#side-ext {
+    height: 40px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #282626;
+    padding: 0 18px 0;
+    font-size: 13px;
+    line-height: 40px;
+    color: #666;
+}
+#side-ext a {
+    color: #ccc;
+    text-decoration: none;
+}
+#side-ext a:hover {
+    color: #fcfcfc;
+    text-decoration: none;
+}
+#side-ext a.fa:before {
+    margin-right: 6px;
+}

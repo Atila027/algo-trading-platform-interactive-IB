@@ -1,0 +1,8 @@
+# This file contains a list of people who have made contributions
+# to the public version of QTPyLib.
+
+Ran Aroussi, Creator <https://github.com/ranaroussi>
+jkleint, Contributor <https://github.com/jkleint>
+Lionel Young, Contributor <https://github.com/lionelyoung>
+Randy Terbush, Contributor <https://github.com/rterbush>
+Miguel Ángel Vilariño, Contributor <https://github.com/miguelvm>
