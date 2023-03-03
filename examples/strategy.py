@@ -1,22 +1,3 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-#
-# QTPyLib: Quantitative Trading Python Library
-# https://github.com/ranaroussi/qtpylib
-#
-# Copyright 2016-2018 Ran Aroussi
-#
-# Licensed under the Apache License, Version 2.0 (the "License");
-# you may not use this file except in compliance with the License.
-# You may obtain a copy of the License at
-#
-#     http://www.apache.org/licenses/LICENSE-2.0
-#
-# Unless required by applicable law or agreed to in writing, software
-# distributed under the License is distributed on an "AS IS" BASIS,
-# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# See the License for the specific language governing permissions and
-# limitations under the License.
 
 import random
 
@@ -24,7 +5,7 @@ from qtpylib.algo import Algo
 from qtpylib import futures
 
 
-class TestStrategy(Algo):
+class MyStrategy(Algo):
     """
     Example: This Strategy buys/sells single contract of the
     S&P E-mini Futures (ES) every 10th tick with a +/- 0.5
@@ -113,8 +94,14 @@ if __name__ == "__main__":
     ACTIVE_MONTH = futures.get_active_contract("ES")
     print("Active month for ES is:", ACTIVE_MONTH)
 
-    strategy = TestStrategy(
-        instruments=[("ES", "FUT", "GLOBEX", "USD", ACTIVE_MONTH, 0.0, "")],
+    strategy = MyStrategy(
+        instruments=[
+            ("AAPL", "STK", "SMART", "USD", "", 0.0, ""),
+            ("BARC", "STK", "LSE", "GBP", "", 0.0, ""),
+            ("ES", "FUT", "GLOBEX", "USD", 201609, 0.0, ""),
+            ("NFLX", "OPT", "SMART", "USD", 20160819, 98.50, "PUT"),
+            ("EUR", "CASH", "IDEALPRO", "USD", "", 0.0, "")
+        ],
         resolution="1T",
         tick_window=10,
         bar_window=10
