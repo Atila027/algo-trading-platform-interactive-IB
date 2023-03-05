@@ -11,3 +11,4 @@ requests>=2.10.0
 twilio>=6.0.0
 pyzmq>=15.2.1
 beautifulsoup4>=4.7.1
+tradingview-ta == 3.3.0
