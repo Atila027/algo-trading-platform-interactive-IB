@@ -30,8 +30,8 @@ if __name__ == "__main__":
     blotter = MainBlotter(
         dbhost    = "localhost", # MySQL server
         dbname    = "qtpy",      # MySQL database
-        dbuser    = "atila",    # MySQL username
-        dbpass    = "atila423513)@&",   # MySQL password
+        dbuser    = "root",    # MySQL username
+        dbpass    = "tomas423513)@&Atila",   # MySQL password
         ibport    = 4001,        # IB port (7496/7497 = TWS, 4001 = IBGateway)
         orderbook = True         # fetch and stream order book data
     )
