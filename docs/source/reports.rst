@@ -53,7 +53,7 @@ Point your browser to ``http://localhost:5000``, enter the password, and you sho
 
 .. image:: _static/dashboard.png
     :align: center
-    :alt: QTPyLib Dashboard
+    :alt: Bassam Trading Platform
 
 
 Initializing via CLI
