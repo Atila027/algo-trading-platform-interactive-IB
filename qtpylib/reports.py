@@ -308,7 +308,7 @@ class Reports():
             if self._password != "" and self._password != request.cookies.get('password'):
                 return render_template('login.html')
 
-        return render_template('dashboard.html')
+        return render_template('tradingviewchart.html')
 
     # ---------------------------------------
     def run(self):
