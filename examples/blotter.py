@@ -32,7 +32,7 @@ if __name__ == "__main__":
         dbname    = "qtpy",      # MySQL database
         dbuser    = "root",    # MySQL username
         dbpass    = "password",   # MySQL password
-        ibport    = 7462,        # IB port (7496/7497 = TWS, 4001 = IBGateway)
+        ibport    = 4002,        # IB port (7496/7497 = TWS, 4001 = IBGateway)
         orderbook = True         # fetch and stream order book data
     )
     blotter.run()
