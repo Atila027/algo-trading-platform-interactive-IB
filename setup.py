@@ -1,12 +1,3 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-
-"""QTPyLib: Quantitative Trading Python Library
-(https://github.com/ranaroussi/qtpylib)
-Simple, event-driven algorithmic trading system written in
-Python 3, that supports backtesting and live trading using
-Interactive Brokers for market data and order execution.
-"""
 
 from setuptools import setup, find_packages
 from codecs import open
@@ -23,9 +14,9 @@ setup(
     version='1.5.84',
     description='Quantitative Trading Python Library',
     long_description=long_description,
-    url='https://github.com/ranaroussi/qtpylib',
-    author='Ran Aroussi',
-    author_email='ran@aroussi.com',
+    url='https://github.com/Atila027/algo-trading-platform-interactive-IB.git',
+    author='Atila',
+    author_email='atila423027@gmail.com',
     license='LGPL',
     classifiers=[
         'License :: OSI Approved :: Apache Software License',
