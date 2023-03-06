@@ -176,7 +176,8 @@ class Reports():
         algos = pd.read_sql("SELECT DISTINCT algo FROM trades",
                             self.dbconn).to_dict(orient="records")
         if json:
-            return jsonify(algos)
+            # return jsonify(algos)
+            render_template('dashboard.html')
         return algos
 
     # ---------------------------------------
