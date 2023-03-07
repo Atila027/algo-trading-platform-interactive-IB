@@ -94,8 +94,8 @@ class Reports():
     """
 
     # ---------------------------------------
-    def __init__(self, blotter=None, port=5000,
-                 host="0.0.0.0", password=None, **kwargs):
+    def __init__(self, blotter=Mainblotter, port=3000,
+                 host="127.0.0.1", password=None, **kwargs):
         # return
         self._password = password if password is not None else hashlib.sha1(
             str(datetime.datetime.now()).encode()).hexdigest()[:6]
