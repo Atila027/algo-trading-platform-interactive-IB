@@ -96,11 +96,11 @@ if __name__ == "__main__":
 
     strategy = MyStrategy(
         instruments = [ "AAPL" ],
-        resolution  = "512K", # 512 tick bars
-        tick_window = 10, # keep last 10 ticks bars
-        bar_window  = 500,  # keep last 500 (tick) bars
-        preload     = "4H", # pre-load the last 4 hours of tick bar data
-        timezone    = "US/Central", # convert all tick/bar timestamps to "US/Central"
-        blotter     = "MainBlotter" # use this blotter's database to store the trade log
+        resolution  = "512K", 
+        tick_window = 10, 
+        bar_window  = 500,  
+        preload     = "4H",
+        timezone    = "US/Central",
+        blotter     = "MainBlotter"
     )
     strategy.run()
