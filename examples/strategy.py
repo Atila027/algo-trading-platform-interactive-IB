@@ -95,15 +95,12 @@ if __name__ == "__main__":
     print("Active month for ES is:", ACTIVE_MONTH)
 
     strategy = MyStrategy(
-        instruments=[
-            ("AAPL", "STK", "SMART", "USD", "", 0.0, ""),
-            ("BARC", "STK", "LSE", "GBP", "", 0.0, ""),
-            ("ES", "FUT", "GLOBEX", "USD", 201609, 0.0, ""),
-            ("NFLX", "OPT", "SMART", "USD", 20160819, 98.50, "PUT"),
-            ("EUR", "CASH", "IDEALPRO", "USD", "", 0.0, "")
-        ],
-        resolution="1T",
-        tick_window=10,
-        bar_window=10
+        instruments = [ "AAPL" ],
+        resolution  = "512K", # 512 tick bars
+        tick_window = 10, # keep last 10 ticks bars
+        bar_window  = 500,  # keep last 500 (tick) bars
+        preload     = "4H", # pre-load the last 4 hours of tick bar data
+        timezone    = "US/Central", # convert all tick/bar timestamps to "US/Central"
+        blotter     = "MainBlotter" # use this blotter's database to store the trade log
     )
     strategy.run()
