@@ -26,47 +26,40 @@
 <!-- <select id="algos"><option value="">All Algos</option></select>
 <span id="daterage"></span> -->
 <div class="tradingview-widget-container">
-    <div id="tradingview_74048" style="padding-top: 52px; width: 70%; height: 500px;"></div>
-    <div class="tradingview-widget-container__widget"></div>
-    <!-- <div class="tradingview-widget-copyright">
-        <a href="https://www.tradingview.com/symbols/AAPL/" rel="noopener" target="_blank">
-            <span class="blue-text">Real time trading Chart</span></a>
-    </div> -->
+  <!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+    <div id="tradingview_eae5b"></div>
+    <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/NASDAQ-AAPL/" rel="noopener" target="_blank"><span class="blue-text">AAPL stock chart</span></a> by TradingView</div>
     <script type="text/javascript">
-        new TradingView.widget(
-                {
-                "autosize": true,
-                "symbol": "AAPL",
-                "interval": "D",
-                "timezone": "Europe/Zurich",
-                "theme": "light",
-                "style": "1",
-                "locale": "en",
-                "toolbar_bg": "#f1f3f6",
-                "enable_publishing": false,
-                "hide_side_toolbar": false,
-                "allow_symbol_change": true,
-                "studies": [
-                    "RSI@tv-basicstudies",
-                    "StochasticRSI@tv-basicstudies"
-                ],
-                "container_id": "tradingview_74048"
-            }
-        );
-    </script>
-    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
-        new TradingView.widget({
-        "interval": "1D",
-        "width": "100%",
-        "isTransparent": false,
-        "height": "100%",
+    new TradingView.widget(
+        {
+        "width": 980,
+        "height": 610,
         "symbol": "NASDAQ:AAPL",
-        "showIntervalTabs": true,
+        "timezone": "Etc/UTC",
+        "theme": "light",
+        "style": "1",
         "locale": "en",
-        "colorTheme": "light"
-      })
+        "toolbar_bg": "#f1f3f6",
+        "enable_publishing": true,
+        "withdateranges": true,
+        "range": "YTD",
+        "hide_side_toolbar": false,
+        "allow_symbol_change": true,
+        "details": true,
+        "hotlist": true,
+        "calendar": true,
+        "studies": [
+        "STD;Average%Day%Range",
+        "STD;Average%1Directional%1Index",
+        "Volume@tv-basicstudies"
+        ],
+        "container_id": "tradingview_eae5b"
+    }
+    );
     </script>
-    <div class="tradingview-widget-container">
+  </div>
+  <!-- TradingView Widget END -->
   </div>
 </body>
 </html>
